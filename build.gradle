@@ -23,6 +23,9 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
 }
+war {
+    enabled=true
+}
 
 artifacts {
     archives sourcesJar
